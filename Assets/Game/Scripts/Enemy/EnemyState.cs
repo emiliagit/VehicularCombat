@@ -7,7 +7,7 @@ using UnityEngine;
     {
         Idle,
         Chasing,
-        Attacking
+        
 
     }
 
