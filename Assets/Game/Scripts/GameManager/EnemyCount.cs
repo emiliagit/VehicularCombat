@@ -8,7 +8,7 @@ public class EnemyCount : MonoBehaviour
 {
     public TextMeshProUGUI enemyCounterText;
 
-    private PlayerHealth playerHealth;
+    public PlayerHealth playerHealth;
 
     void Update()
     {
@@ -22,7 +22,7 @@ public class EnemyCount : MonoBehaviour
         int enemyCount = enemies.Length;
         enemyCounterText.text = "Enemies left: " + enemyCount;
 
-        if(enemyCount <= 0 && playerHealth.hp > 1)
+        if(enemyCount == 0 && playerHealth.hp > 1)
         {
             SceneManager.LoadScene("Victory");
         }
