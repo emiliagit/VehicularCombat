@@ -355,8 +355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   player: {fileID: 0}
-  detectionRange: 40
-  stopDistance: 15
+  detectionRange: 35
+  stopDistance: 25
   moveSpeed: 5
   rotationSpeed: 2
 --- !u!114 &2316239476471687226
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   turret: {fileID: 4339861350199996378}
-  rotationSpeed: 1
+  rotationSpeed: 4
 --- !u!114 &7035807320259336607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153093373755847779}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f59b553624dc042b590a0d16841e7b, type: 3}
   m_Name: 
@@ -392,7 +392,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 5272924528856769072}
   fireRate: 0.5
   bulletForce: 25
-  detectionRadius: 25
+  detectionRadius: 30
 --- !u!114 &8812865275420509813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 4593184484909914552, guid: 2e1e9506f5904a64b81744324fb7cd50, type: 3}
 --- !u!1 &1397629665669033979
 GameObject:
   m_ObjectHideFlags: 0
