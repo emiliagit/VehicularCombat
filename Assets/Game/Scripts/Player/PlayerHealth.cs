@@ -9,7 +9,9 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;
 
     //public Timer temporizador;
-    private float hp;
+    public float hp;
+
+    private EnemyCount enemyCount;
 
 
     private void Start()
@@ -27,10 +29,6 @@ public class PlayerHealth : MonoBehaviour
 
         }
 
-        if (hp > 0 /*&& temporizador.restante < 1*/)
-        {
-            SceneManager.LoadScene("Victory");
-        }
 
         UpdateHealthUI();
 
