@@ -109,13 +109,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574612181365216065}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.27899992, z: 1.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4339861350199996378}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636883874405053261
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,9 +215,10 @@ GameObject:
   - component: {fileID: 970728146862852867}
   - component: {fileID: 2316239476471687226}
   - component: {fileID: 7035807320259336607}
+  - component: {fileID: 8812865275420509813}
   m_Layer: 6
   m_Name: TankFree_Blue
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -380,18 +381,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153093373755847779}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f59b553624dc042b590a0d16841e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   aim: {fileID: 2316239476471687226}
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 8525146836743197712, guid: 8e54523a568600a40ba776b8fea0a9ad, type: 3}
   projectileSpawnPoint: {fileID: 5272924528856769072}
   fireRate: 0.5
-  bulletForce: 7
+  bulletForce: 25
   detectionRadius: 25
+--- !u!114 &8812865275420509813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153093373755847779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabf767bfdfd12345a6406032da1f62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  deathEffect: {fileID: 0}
 --- !u!1 &1397629665669033979
 GameObject:
   m_ObjectHideFlags: 0
